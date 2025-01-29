@@ -5,10 +5,27 @@ const App = () => {
   const [height, setHeight] = useState(0);
   const [bmi, setBMI] = useState(" ");
   const [message, setMessage] = useState(" ");
+
+  let calculate = (e) => {
+    e.preventDefault();
+    if (weight <= 0 || height <= 0) {
+      alert("Enter valid height and weight");
+    } else {
+      let bmi = (weight / (height * height)) * 703;
+      setBMI(bmi.toFixed(1));
+      if (bmi < 25) {
+        setMessage("You are under weight");
+      } else if (bmi >= 25 && bmi <= 30) {
+        setMessage("Your weight is normal");
+      } else {
+        setMessage("You are overweight");
+      }
+    }
+  };
   return (
     <div>
       <div className="container">
-        <form>
+        <form onSubmit={calculate}>
           <label>Weight</label>
           <input
             type="text"
