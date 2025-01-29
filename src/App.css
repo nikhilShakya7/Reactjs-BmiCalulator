@@ -1,42 +1,99 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+body {
+  justify-content: center;
+  background-color: whitesmoke;
+}
+/* Centering the entire app */
+.container {
+  max-width: 400px;
+  margin: 50px auto;
+  padding: 20px;
+  background: #f4f4f4;
+  border-radius: 10px;
+  box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   text-align: center;
+  width: 500px;
+  height: 540px;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+/* Form styling */
+form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 20px;
+  justify-content: center;
+  align-items: center;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Label styling */
+label {
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 20px;
+  align-self: flex-start;
+  font-family: "Times New Roman", Times, serif;
+  color: #218838;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+/* Input field styling */
+input {
+  width: 100%;
+  padding: 10px;
+  background-color: black;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  font-size: 16px;
+  color: #ccc;
+}
+.input :hover {
+  border-color: #218838;
 }
 
-.card {
-  padding: 2em;
+/* Button styling */
+button {
+  padding: 10px;
+  background: #28a745;
+  color: white;
+  font-size: 18px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.reset {
+  background-color: red;
+  margin-top: 20px;
+}
+.reset:hover {
+  background-color: rgb(206, 13, 16);
 }
 
-.read-the-docs {
-  color: #888;
+button:hover {
+  background: #218838;
+}
+
+/* BMI result styling */
+.result {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+h3 {
+  font-size: 22px;
+  color: #333;
+}
+.container h2 {
+  color: #0f0f0f;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+p {
+  font-size: 18px;
+  font-weight: bold;
+  color: #555;
 }
