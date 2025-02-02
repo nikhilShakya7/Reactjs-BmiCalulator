@@ -7,7 +7,7 @@ body {
   max-width: 400px;
   margin: 50px auto;
   padding: 20px;
-  background: #f4f4f4;
+  background: whitesmoke;
   border-radius: 10px;
   box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.1);
   display: flex;
@@ -31,25 +31,23 @@ form {
 /* Label styling */
 label {
   font-size: 20px;
+
   font-weight: bold;
   margin-top: 20px;
   align-self: flex-start;
-  font-family: "Times New Roman", Times, serif;
+  font-family: serif;
   color: #218838;
 }
 
 /* Input field styling */
 input {
   width: 100%;
+  margin-top: 10px;
   padding: 10px;
-  background-color: black;
   margin-bottom: 20px;
-  border-radius: 5px;
+  border-radius: 10px;
   font-size: 16px;
-  color: #ccc;
-}
-.input :hover {
-  border-color: #218838;
+  border-style: none;
 }
 
 /* Button styling */
